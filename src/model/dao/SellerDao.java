@@ -13,4 +13,5 @@ public interface SellerDao {
     void deleteById(Integer id);
     Seller findById(Integer id); //se o id não existir: retorna null
     List<Seller> findAll(); //retorna todos os vendedores
+    List<Seller> findByDepartment(Department department);
 }
