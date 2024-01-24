@@ -9,6 +9,9 @@ import java.util.List;
 public interface SellerDao {
 
     void insert(Department obj);
+
+    void insert(Seller obj);
+
     void update(Department Obj);
     void deleteById(Integer id);
     Seller findById(Integer id); //se o id não existir: retorna null
