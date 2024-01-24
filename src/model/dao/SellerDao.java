@@ -13,6 +13,9 @@ public interface SellerDao {
     void insert(Seller obj);
 
     void update(Department Obj);
+
+    void update(Seller obj);
+
     void deleteById(Integer id);
     Seller findById(Integer id); //se o id não existir: retorna null
     List<Seller> findAll(); //retorna todos os vendedores
