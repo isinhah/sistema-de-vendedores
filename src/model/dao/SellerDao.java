@@ -8,11 +8,7 @@ import java.util.List;
 //operações para o uso com banco de dados
 public interface SellerDao {
 
-    void insert(Department obj);
-
     void insert(Seller obj);
-
-    void update(Department Obj);
 
     void update(Seller obj);
 

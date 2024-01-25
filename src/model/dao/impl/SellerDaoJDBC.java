@@ -22,11 +22,6 @@ public class SellerDaoJDBC implements SellerDao {
     }
 
     @Override
-    public void insert(Department obj) {
-
-    }
-
-    @Override
     public void insert(Seller obj) {
         PreparedStatement st = null;
         try {
@@ -63,11 +58,6 @@ public class SellerDaoJDBC implements SellerDao {
         finally {
             DB.closeStatement(st);
         }
-    }
-
-    @Override
-    public void update(Department Obj) {
-
     }
 
     @Override

@@ -40,13 +40,13 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserido! Id do novo vendedor: " + newSeller.getId());
 
-        System.out.println("=== TEST 4: SELLER Update ===");
+        System.out.println("=== TEST 5: SELLER Update ===");
         seller = sellerDao.findById(1);
         seller.setName("Martha Waine");
         sellerDao.update(seller);
         System.out.println("Atualização concluida! ");
 
-        System.out.println("=== TEST 4: SELLER Delete ===");
+        System.out.println("=== TEST 6: SELLER Delete ===");
         System.out.println("Insira o id do vendedor que vai ser excluido: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
